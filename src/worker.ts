@@ -50,7 +50,7 @@ async function getHandler (filename : string, name : string) : Promise<Function 
     return handler;
   }
 
-  console.log("getHandler",filename)
+  console.log("getHandler test",filename)
 
   try {
     // With our current set of TypeScript options, this is transpiled to
