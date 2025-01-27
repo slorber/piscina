@@ -11,6 +11,8 @@ test('workerCreate/workerDestroy should be emitted while managing worker lifecyc
   t.plan(2);
   let newWorkers = 0;
   let destroyedWorkers = 0;
+  console.log("filename",resolve(__dirname, 'fixtures/eval.js'))
+
   const pool = new Piscina({
     filename: resolve(__dirname, 'fixtures/eval.js'),
     maxThreads: 3,
