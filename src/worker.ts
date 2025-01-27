@@ -50,6 +50,8 @@ async function getHandler (filename : string, name : string) : Promise<Function 
     return handler;
   }
 
+  console.log("getHandler",filename)
+
   try {
     // With our current set of TypeScript options, this is transpiled to
     // `require(filename)`.
